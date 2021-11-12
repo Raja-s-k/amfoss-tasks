@@ -21,4 +21,4 @@ open source projects
 
 **Do you have any feedback for the selection process?**
 
-No , but i feel somewhat diff form other selection process
+No , but i feel somewhat diff form other selection processes
