@@ -1,0 +1,54 @@
+a=int(input())
+b=list(map(int,input().split(" ")))
+c=[]
+d=[]
+f=0
+g=""
+h=[]
+
+b.sort()
+
+for i in range(0,len(b)):
+  if i != 0 :
+    if b[i-1] != b[i]:
+      d.append(i)
+    else:
+      pass
+  else:
+    pass
+    
+ 
+
+for i in range(0, len(b)):
+   for j in range(i+1, len(b)):
+       if(b[i] == b[j]):
+         pass
+           #print(b[j])
+
+for i in b:
+  if i in c:
+    pass
+  else:
+    c.append(i)
+
+for i in d:
+  if f==0:
+    b.insert(i,"|")
+    f+=1
+  else:
+    b.insert(i+f,"|")
+    f+=1
+
+
+for i in b:
+  if type(i)=="str":
+    g+=i
+  else:
+    g+=str(i)
+
+b=g.split("|")
+
+for i in b:
+    h.append(len(i))
+
+print(max(h),len(c))
