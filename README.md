@@ -4,6 +4,9 @@
 
 I just followed the instructions given in the docs to complete the task 1 . It was a pretty easy task .
 
+**Task-3**
+
+I can only able solve 2 programs in task-3. I am took cs in my higer secondary . So , those python basic commands helped to solve those two programs.
 **Task-6**
 
 It seemed to be a big task to eyes . So i seeked help of my friend . He just guided me how to finish this task . 
