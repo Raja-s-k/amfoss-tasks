@@ -17,7 +17,7 @@ I can only able solve 2 programs in task-3. I persued cs in my higer secondary .
 
 **Task-5**
  
- It was a easy task for me as i have watched the C turorial from cs50. I used a [online_compiler][1] to find the errors and resolve them . Most of the error where resolved
+ It was a easy task for me as i have watched the C turorial from cs50. I used a [online_compiler][ https://www.onlinegdb.com/online_c_compiler/] to find the errors and resolve them . Most of the error where resolved
  by me only and to solve  the rest i used the stackoverflow website.
 
 [1] : https://www.onlinegdb.com/online_c_compiler/
