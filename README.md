@@ -67,4 +67,4 @@ any other source . But i did not get all test cases passed .
 
 
 
-[1] https://www.onlinegdb.com/online_c_compiler
+[1] :https://www.onlinegdb.com/online_c_compiler
