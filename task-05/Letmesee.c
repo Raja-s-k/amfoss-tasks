@@ -205,7 +205,6 @@ int Main(void)
         gameCount = gameCount - 1;
     }    
     printf("\n\n\t The Game Score %d / %d", score, originalScore);
-
     getchar();
     return 0;
 }
