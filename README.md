@@ -20,6 +20,8 @@ I can only able solve 2 programs in task-3. I persued cs in my higer secondary .
  It was a easy task for me as i have watched the C turorial from cs50. I used a [online_compiler][1] to find the errors and resolve them . Most of the error where resolved
  by me only and to solve  the rest i used the stackoverflow website.
 
+[1] : https://www.onlinegdb.com/online_c_compiler/
+
 **Task-6**
 
 It seemed to be a big task to eyes . So i seeked help of my friend . He just guided me how to finish this task . 
@@ -67,4 +69,3 @@ any other source . But i did not get all test cases passed .
 
 
 
-[1] : https://www.onlinegdb.com/online_c_compiler/
