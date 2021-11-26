@@ -1,10 +1,10 @@
 # amfoss-tasks
 
-**Completed tasks** => 01 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
+**Completed tasks** => 00 , 01 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
 
 **Partially completed tasks** => 03 ( 08 questions left ) , 07 , 10 ( watched c tutorial ) 
 
-**Unattempted** => 00 , 02 , 04 , 12
+**Unattempted** => 02 , 04 , 12
 
 **Task-1**
 
