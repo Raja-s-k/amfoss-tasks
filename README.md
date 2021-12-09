@@ -1,10 +1,10 @@
 # amfoss-tasks
 
-**Completed tasks** => 01 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
+**Completed tasks** => 00 , 01 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
 
 **Partially completed tasks** => 03 ( 08 questions left ) , 07 , 10 ( watched c tutorial ) 
 
-**Unattempted** => 00 , 02 , 04 , 12
+**Unattempted** => 02 , 04 , 12
 
 **Task-1**
 
@@ -42,7 +42,7 @@ that helped me to finish this task . It was also easy to me and it took 1 1/2 da
 
 **Task-10**
 
-I just watched the c tutorial from cs50 for this task . Rest of the things i could not complete as it is asking hardvard key for doing and submitting the problem sets 
+I just watched the c tutorial from cs50 for this task . Rest of the things i could not complete as it is asking hardvard key for doing and submitting the problem sets .
 
 **Task-11**
 
@@ -52,7 +52,7 @@ complete this task .
 **Task-13**
 
 I am also a part of robotics club . So , I had a good knowledge about adrino and other stuffs in that field . 
-So , that helped me to completer Task-13
+So , that helped me to complete Task-13 .
 
 **Task-14**
 
