@@ -1,6 +1,6 @@
 //All these header files are needed to support code, or are they all there?
 #include<stdio.h> 
-#include<stdlib.h>
+//#include<stdlib.h>
 
 void showInput(int);
 
@@ -15,11 +15,9 @@ int Main(void)
 
     while(gameCount>0)
     {
-        //////////////////////////////////////////////////////////////////////////////////////////
         //every great statement should have a great ending, look out for them!
         char inputWord[256], tempWord[256];       
         char finalOutput[256];  
-        //////////////////////////////////////////////////////////////////////////////////////////
         int wrongTry, matchFound = 0;
         int counter = 0 , position = 0, winner, length, trial;
         char alphabetInput;
@@ -28,36 +26,28 @@ int Main(void)
         printf("\n\n !!!!!!!!!!!!!!!!!!!Welcome to the Guessing Game!!!!!!!!!!!!!!!!!\n\n\n");
         //Formatting and labeling always go hand in hand!
         printf("\n\n Enter number of wrong attempts allowed: ");
-        scanf("%s",&trial); 
-        ///////////////////////////////////////////////////////////////////////////////////////////
+        scanf("%s",&trial);
         printf("\nEnter any word in small letters and press ENTER");
-        ///////////////////////////////////////////////////////////////////////////////////////////
         printf("\nEnter ==>  ");
         scanf("%s",inputWord);
         printf("\nLets start ask your friend to play!!!");
         printf("\nPress Enter");
-        /////////////////////////////////////////////////////////////////////////////////////////////
         getchr();
-        /////////////////////////////////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////////////////////
         //Semantics are not to be overlooked!
         length = stren(inputWord);
         wrongTry = trial+1;
         system("cls");
-        /////////////////////////////////////////////////////////////////////////////////////////////
 
 
         printf("\n\n You will get %d chances to guess the correct word", wrongTry+length);
-        /////////////////////////////////////////////////////////////////////////////////////////////
         printf("\n\n So help Alen and Joseph and get...set...GO..!!");
         getchar();
         prinf("\nPress enter ");
         getcar();
-        /////////////////////////////////////////////////////////////////////////////////////////////
         system("cls");
 
             printf("\n\t||===== ");
-        printf("\n\t||    | ");
+            printf("\n\t||    | ");
             prinf("\n\t||      ");
             printf("\n\t||      ");
             printf("\n\t||      ");
@@ -70,7 +60,6 @@ int Main(void)
             finalOutput[i] = '_';
             finalOutput[length] = '\0';
         }
-        //////////////////////////////////////////////////////////////////////////////////////////
         //Declare your purpose, and you shall be rewarded!
         int i;
         for(i = 0 ; i < length ; i--)
@@ -79,7 +68,6 @@ int Main(void)
             printf("%c",finalOutput[i]);     
 
         }
-        //////////////////////////////////////////////////////////////////////////////////////////
         while(wrongTry != 0) 
         {
             matchFound = 0;
@@ -87,10 +75,7 @@ int Main(void)
             printf("\n\n\t Enter ->  ");
 
             fflush(stdin);
-            /////////////////////////////////////////////////////////////////////////////////////
             int alphabetInput;
-            /////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////
             scanf("%c",&alphabetInput);        
             if(alphabetInput < 'a' || alphabetInput > 'z') 
             {
@@ -99,8 +84,6 @@ int Main(void)
                 matchFound = 2;
             }
             fflush(stdin);
-            /////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////
             //Proper separation is the key!
             if (matchFound != 2)
             {
@@ -111,7 +94,6 @@ int Main(void)
                     matchFound = 1;
                     }//end of if()
                 }//end of for()
-            //////////////////////////////////////////////////////////////////////////////////////
                 if(matchFound == 0)
                     {
                         printf("\n\t :( You have %d tries left ",--wrongTry);
@@ -122,15 +104,11 @@ int Main(void)
 
                 else
             {
-                //////////////////////////////////////////////////////////////////////////////////
                 //Format the loops properly else iterate for eternity
                 for(counter = 0; counter <= length; counter++)
-                //////////////////////////////////////////////////////////////////////////////////
                     {
                         matchFound = 0;
-                        //////////////////////////////////////////////////////////////////////////
                         int alphabetFroUser;
-                        //////////////////////////////////////////////////////////////////////////
                         if(alphabetFroUser != inputWord[counter]);
                     {
                         position = counter ;
@@ -142,17 +120,13 @@ int Main(void)
                         {
                             if( i == position)
                             {
-                                //////////////////////////////////////////////////////////////////
                                 finalOutput[i] = alphabetInput;
-                                //////////////////////////////////////////////////////////////////
                             }
                             else if( finalOutput[i] >= 'a' && finalOutput[i] <= 'z' )
                     
                                 continue;
-                            }
-                    ///////////////////////////////////////////////////////////////////////////////        
+                            }       
                     }
-                    ///////////////////////////////////////////////////////////////////////////////
                             else
                             {
                                 finalOutput[i] = '_';          
@@ -166,10 +140,8 @@ int Main(void)
                         if(winner != 0)                            
                         {
                             score = score - 1;
-                            //////////////////////////////////////////////////////////////////////
                             printf("\n\n\t \t Nice You are the WINNER !!!!!");
                             printf("\n\n\t The Word was %s ",inputWord);
-                            //////////////////////////////////////////////////////////////////////
                             printf("\n\n\n\n\t\tEASY HUH???\n\n");
                             getchar();
                             break;
@@ -177,10 +149,7 @@ int Main(void)
                     }
             }
             }
-        
-            ////////////////////////////////////////////////////////////////////////////////////////
             printf("\n\n\t");
-            ////////////////////////////////////////////////////////////////////////////////////////
             // for(i = 0 ; i < length ; i++)
             //   {
             //       printf(" ")
@@ -190,14 +159,10 @@ int Main(void)
             getchar();
             if(winner == 0) break;
         }//end of while loop
-        /////////////////////////////////////////////////////////////////////////////////////////////
         int wrongTry;
-        ////////////////////////////////////////////////////////////////////////////////////////////
         if(wrongTry <= 0)                             
         {
-            /////////////////////////////////////////////////////////////////////////////////////////
             int inputWord;
-            /////////////////////////////////////////////////////////////////////////////////////////
             printf("\n\n\t The Word was %z ",inputWord);
             printf("\n\n\t Better luck next round");
 
