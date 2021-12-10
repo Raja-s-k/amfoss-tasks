@@ -26,5 +26,5 @@
 
 **git commit** - used to move the changes made in the local directory to the remote directory.
 
-**git push** - used to upload the files form the local directory to remote directory.
+**git push** - used to upload the files form local directory to remote directory.
 
