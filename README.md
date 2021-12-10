@@ -1,14 +1,20 @@
 # amfoss-tasks
 
-**Completed tasks** => 00 , 01 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
+**Completed tasks** => 00 , 01 , 02 , 05 , 06 , 08 , 09 , 11 , 13 , 14 , 15
 
 **Partially completed tasks** => 03 ( 08 questions left ) , 07 , 10 ( watched c tutorial ) 
 
-**Unattempted** => 02 , 04 , 12
+**Unattempted** => 04 , 12
 
 **Task-1**
 
 I just followed the instructions given in the docs to complete the task 1 . It was a pretty easy task .
+
+**Task-2**
+
+Like task 1 I just followed the steps given in the docs and that helped me to complete this task.
+It also gave me a basic idea about the ubuntu terminal commands. 
+
 
 **Task-3**
 

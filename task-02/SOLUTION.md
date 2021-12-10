@@ -22,7 +22,7 @@
 
 **git status** - used to check the changes made in the local repository.
 
-**git add .** - used to add the changes in the local directory to the remote directory.
+**git add** - used to add the changes in the local directory to the remote directory.
 
 **git commit** - used to move the changes made in the local directory to the remote directory.
 
