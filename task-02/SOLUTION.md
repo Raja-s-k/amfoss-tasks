@@ -20,11 +20,11 @@
 
 **git clone** - used to clone a repository. 
 
-**git status** - used to check the changes made in the local repository.
+**git status** - used to check the changes made in the local directory.
 
 **git add** - used to add the changes in the local directory to the remote directory.
 
 **git commit** - used to move the changes made in the local directory to the remote directory.
 
-**git push** - used to upload the file form the local to remote repository.
+**git push** - used to upload the files form the local directory to remote directory.
 
