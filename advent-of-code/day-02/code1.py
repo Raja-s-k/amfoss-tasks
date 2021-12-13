@@ -16,3 +16,5 @@ for i in b:
         pass
 
 print(c*d)
+
+a.close()
