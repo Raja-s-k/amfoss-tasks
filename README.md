@@ -34,7 +34,7 @@ Then i viewed some yt videos about flutter and its tools . It helped me a lot to
 
 **Task-7**
 
-I took nearly 2 1/2 days to complete this task. It was not much easy task for me on the other hand it was not so much hard too. I felt it hard since go is new to me.On the first day i have installed all the softwares and packeges required for our project and i took the other 1 1/2 day to built our project. Colly is the main package i have used in this task.
+I took nearly 2 1/2 days to complete this task. It was not much easy task for me on the other hand it was not so much hard too. I felt it hard since go is new to me. On the first day i have installed all the softwares and packeges required for our project and i took the other 1 1/2 day to built our project. Colly is the main package i have used in this task.
 
 
 **Task-8**
