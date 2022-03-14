@@ -5,38 +5,37 @@ import (
 	"log"
 	"os"
 
-	"github.com/gocolly/colly"
+	"github.com/PuerkitoBio/goquery"
+	"github.com/geziyor/geziyor"
+	"github.com/geziyor/geziyor/client"
 )
 
 func main() {
 
-	fName := "data.csv"
-	file, err := os.Create(fName)
-	if err != nil {
-		log.Fatalf("Could not create file, err: %q", err)
-		return
+	csvdata := [][]string{
+		{"name", "net_worth", "age", "country/territory", "Sorce"},
 	}
-	defer file.Close()
+	geziyor.NewGeziyor(&geziyor.Options{
+		StartRequestsFunc: func(g *geziyor.Geziyor) {
+			g.GetRendered("https://www.forbes.com/real-time-billionaires/", g.Opt.ParseFunc)
+		},
+		ParseFunc: func(g *geziyor.Geziyor, r *client.Response) {
+			r.HTMLDoc.Find("tr.base.ng-scope").Each(func(i int, s *goquery.Selection) {
+				if i < 11 {
+					csvdata = append(csvdata, []string{s.Find("td.name").Text(), s.Find("td.Net.Worth").Text(), s.Find("td.age").Text(), s.Find("td.Country\\/Territory").Text(), s.Find("td.source").Text()})
+				}
+			})
+		},
+	}).Start()
 
-	writer := csv.NewWriter(file)
-
-	defer writer.Flush()
-
-	c := colly.NewCollector(
-		colly.AllowedDomains("forbes.com"),
-	)
-
-	c.OnHTML(".base ng-scope", func(e *colly.HTMLElement) {
-		//links := e.ChildAttrs("ng-href", "a")
-		//fmt.Println(links)
-		writer.Write([]string{
-			e.ChildText("div.ng-scope"),
-		})
-
-	})
-
-	c.Visit("https://www.forbes.com/real-time-billionaires/#24b3862a3d78")
-	log.Printf("done")
-	log.Println(c)
-
+	csvFile, err := os.Create("data.csv")
+	if err != nil {
+		log.Fatalf("failed creating file: %s", err)
+	}
+	csvwriter := csv.NewWriter(csvFile)
+	for _, entry := range csvdata {
+		_ = csvwriter.Write(entry)
+	}
+	csvwriter.Flush()
+	csvFile.Close()
 }
