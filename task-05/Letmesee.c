@@ -12,6 +12,7 @@ int main(void) //// It is main not Main.... cpp is case sensitive
     printf("\n\n Enter number of rounds of Guessing Game : ");
     scanf("%d",&gameCount); 
     int originalScore = gameCount;
+    
 
     while(gameCount>0)
     {
